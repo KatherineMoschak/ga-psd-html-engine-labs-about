@@ -1,6 +1,254 @@
-/* USE FONT WEIGHT TO SELECT Light 200, Light 200 Italic, Bold 700, Normal 400 or Normal 400 Italic */
-
 body {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight:400;
+} 
+
+.outer-container{
+	width:100%;
+	border-top:1px solid #dadada;
+}
+
+.inner-container{
+	width:960px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+nav ul {
+	float:right;
+	padding:0px;
+	margin-bottom:0px;
+}
+
+nav li{
+	float:left;
+	margin-right:36px;
+	list-style-type: none;
+}
+
+nav li a{
+	text-decoration:none;
+	color:black;
+	font-size: 21px;
+	line-height: 90px; /*using line height instead of margin bottom/top to align text */
+}
+
+#logo  {
+	float:left;
+	margin-top:25px;
+}
+	
+#logo img{
+	width: 124px;
+	height: 58px;
+}
+
+#selected{
+	margin-right:0px;
+}
+
+#selected a{
+	background-color:black;
+	border-radius: 20px;
+	color:white;
+	padding-left:24px;
+	padding-right:24px;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:15px;
+}
+
+#blue{
+	color:#01527c;
+}
+
+/*######################   blurb    ############*/
+.bg-img{
+	background-image: url(../img/bg_b.png);
+	background-size: cover;
+}
+
+#blurb{
+	padding-top:123px; /*taking into account 7px for leading on top of text */
+	padding-bottom:150px;
+}
+
+/* ############# Blurb text ###########*/
+#blurbText{
+	padding-top:82px;
+	padding-bottom:63px; /*taking into account 7px leading on text */
+}
+	
+#blurbText blockquote{
+	font-weight: lighter;
+	font-size:32px;
+	font-style: italic;
+	margin-top:0px; /*taking into account normalize */
+	text-align:center;
+}
+
+#blurbText p{
+	text-align:center;
+	font-style:normal;
+	font-size: 32px;
+	line-height: 46px;
+	margin-bottom:0px; /*taking into account normalize*/
+}
+
+#blurbText p span{
+	font-weight: bold;
+}
+
+/* ############# Features ###########*/
+#features{
+	padding-top:74px;
+	padding-bottom:84px;
+}
+
+.feature{
+	float:left;
+	width:320px;
+}
+
+.feature::before{
+	content: '';
+	background-image:url(../img/sprite.png);
+	display:block;
+	height:218px;
+	position:relative;
+	left:50px;
+}
+
+.cloud::before{
+	background-position: -705px -14px;
+	width:218px;
+}
+
+.star::before{
+	background-position: -454px -15px;
+	width:218px;
+}
+
+.lock::before{
+	background-position: -453px -254px;
+	width:218px;
+}
+
+.feature p{
+	font-size:15px;
+	line-height: 25px;
+	margin:0 36px;
+}
+
+.feature h4{
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+	margin-top:44px;
+	margin-bottom:30px;
+}
+
+/* ############# Bottom ###########*/
+#bottom{
+	padding-top:86px;
+	padding-bottom:86px;
+}
+
+.bottomText {
+	float:left;
+	margin-left:48px;
+	width:434px;
+	margin-top:54px;
+}
+
+.bottomText p{
+	font-size: 15px;
+	line-height: 25px;
+	padding-bottom:27px;
+}
+
+.bottomText h3{
+	font-weight: bold;
+	font-style:normal;
+	font-size:32px;
+	margin-bottom:30px;
+	margin-top:0px; /*account for normalize*/
+}
+
+#bottomImg{
+	float:right;
+}
+
+#learnMore{
+	display:inline;
+	margin-left:20%;
+	padding-top: 8px;
+	padding-bottom:8px;
+	padding-left:42px;
+	padding-right:60px;
+	background-color: black;
+	color:white;
+	border-radius: 30px;
+	font-size:25px;
+	background-image:url(../img/arrow_accordance.png);
+	background-repeat:no-repeat;
+	background-position:90% 50%;
+}
+
+#learnMore a{
+	text-decoration: none;
+	color:#ffffff;
+	outline: none; /*to fix dashed border in firefox*/
+}
+
+#learnMore a:hover{
+	color:#01527c;
+}
+
+/* ############# Footer ###########*/
+#footer{
+	padding-bottom:170px;
+	padding-top:68px;
+}
+
+.blogroll{
+	float:left;
+	margin-left:40px;
+	margin-right:48px;
+}
+
+.blogroll p{
+	margin:0px;
+}
+
+.blogroll a{
+	font-size:16px;
+	line-height: 27px;
+	color:#ededed;
+	text-decoration: none;
+	font-weight: 100;
+	outline: none; /*to fix dashed border in firefox*/
+}
+
+.blogroll a:hover{
+	color:#01527c;
+}
+
+.blogroll h5{
+	color:#ffffff;
+	font-size:16px;
+	line-height: 34px;
+	margin:0px;
+	font-weight:300;
+}
+
+/*######################################*/
+/* clearfix class */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
 }
