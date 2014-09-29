@@ -73,13 +73,73 @@ nav li a{
 	padding-bottom:150px;
 }
 
-/* ############# Blurb text ###########*/
-#blurbText{
+#blurb h1{
+	color:#fbfbfb;
+	text-align: center;
+	padding-bottom:20px; /*accounting for 7px leading on bottom text*/
+	margin-top:0px; /*accounting for margin in normalize*/
+	font-weight: bolder;
+	font-size: 100px;
+	margin-bottom:0px; /*accounting for margin in normalize*/
+	line-height: 86px;
+}
+
+#blurb h3{
+	color:#fbfbfb;
+	text-align: center;
+	font-weight: lighter;
+	font-size:37px;
+	margin-top:0px; /*accounting for margin in normalize*/
+	margin-bottom:0px; /*accounting for margin in normalize*/
+	line-height: 32px;
+}
+
+#left-Arrow{
+	float:left;
+	background-color: black;
+	margin-top: 168px;
+	padding:12px;
+}
+
+#right-Arrow{
+	float:right;
+	background-color:black;
+	margin-top: 168px;
+	padding:12px;
+}
+
+#header{
+	padding-top:87px;
+	padding-bottom:58px;
+}
+
+.blurbText{
+	width:437px;
+	padding-right:95px;
+	background-color:pink;
+}
+
+.blurbText h2{
+	color:#fff;
+	font-size:32px;
+	font-weight: bold;
+}
+
+.blurbText p{
+	color:#fff;
+	font-size:15px;
+	line-height: 25px;/*need to account for 5px above and 5px below when measuring*/
+}
+
+
+
+/* ############# Quote text ###########*/
+#quoteText{
 	padding-top:82px;
 	padding-bottom:63px; /*taking into account 7px leading on text */
 }
 	
-#blurbText blockquote{
+#quoteText blockquote{
 	font-weight: lighter;
 	font-size:32px;
 	font-style: italic;
@@ -87,7 +147,7 @@ nav li a{
 	text-align:center;
 }
 
-#blurbText p{
+#quoteText p{
 	text-align:center;
 	font-style:normal;
 	font-size: 32px;
@@ -95,7 +155,7 @@ nav li a{
 	margin-bottom:0px; /*taking into account normalize*/
 }
 
-#blurbText p span{
+#quoteText p span{
 	font-weight: bold;
 }
 
